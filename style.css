@@ -1,0 +1,28 @@
+#role {
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  color: #bfdce0;
+  font-family: "roboto";
+}
+
+div h1 {
+  font-family: "roboto";
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.blurry-alert {
+    width: 80%;
+    font-size: xx-large;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
