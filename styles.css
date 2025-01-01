@@ -2,18 +2,17 @@
   width: 80%;
   font-size: xx-large;
  opacity: 0.8;
- box-shadow: 0px 12px 30px rgb(94, 93, 93)
+ 
  
 
 }
 
-.infoDiv{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
-
+.info{
+width: 45%;
+margin-left: 15%;
+margin-top: 10%;
+font-size: x-large;
+color: #ECF0F1;
 }
 
 
@@ -21,6 +20,103 @@ header{
   position: sticky;
   top: 0;
   z-index: 5;
+}
+
+
+.card {
+    max-width: 81%;
+    max-height: 91%;
+    padding: 0.5rem; /* Reduce padding */
+    
+  }
+
+.card:hover{
+   transform: scale(1.05); /* Smooth scale-up */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  filter: brightness(1.1); /* Slight brightness increase */
+  
+}
+
+.container{
+   background: rgba(255, 255, 255, 0.5); /* Transparent white */
+    backdrop-filter: blur(10px); /* Adjust the blur intensity */
+    border-radius: 10px; /* Optional: Rounded corners */
+    padding: 20px; /* Inner spacing */
+    width: 300px; /* Container width */
+    margin: 50px auto; /* Centering the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
+    
+  
+}
+
+p{
+  font-family: 'JettBrain Mono', monospace;
+  color: #ECF0F1;
+}
+
+#Title{
+  color: #ECF0F1;
+  margin-left: 15%;
+  margin-top: 15%;
+  margin-bottom: 0%;
+}
+
+
+
+
+
+/*education container*/
+
+.education .card {
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: #fafafa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.education .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  background-color: #212529;
+}
+
+.education .card:hover .card-subtitle {
+  color: #f8f9fa !important;
+}
+
+.education .card:hover .card-text {
+  color: #f8f9fa !important;
+}
+
+.education .card-title {
+  font-family: 'Roboto', sans-serif;
+  color: #3c8dbc;
+  font-weight: bold;
+}
+
+.education .card-subtitle {
+  color: #5a5a5a;
+  transition: color 0.3s ease;
+}
+
+.education .card-text {
+  font-size: 16px;
+  font-family: 'Verdana', sans-serif;
+  line-height: 1.5;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.education .card-body {
+  padding: 25px;
+}
+
+.education .card:first-child {
+  margin-top: 10px;
+}
+
+.education .card:nth-child(2) {
+  margin-left: 50%;
 }
 
 
