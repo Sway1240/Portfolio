@@ -26,25 +26,26 @@ header{
 .card {
     max-width: 81%;
     max-height: 91%;
-    padding: 0.5rem; /* Reduce padding */
+    padding: 0.5rem; 
     
   }
 
 .card:hover{
-   transform: scale(1.05); /* Smooth scale-up */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
-  filter: brightness(1.1); /* Slight brightness increase */
+   transform: scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  filter: brightness(1.1); 
   
 }
 
 .container{
-   background: rgba(255, 255, 255, 0.5); /* Transparent white */
-    backdrop-filter: blur(10px); /* Adjust the blur intensity */
-    border-radius: 10px; /* Optional: Rounded corners */
-    padding: 20px; /* Inner spacing */
-    width: 300px; /* Container width */
-    margin: 50px auto; /* Centering the container */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
+   background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: 300px; 
+    margin: 50px auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    animation: 1.5s fadeInUp;
     
   
 }
@@ -59,13 +60,14 @@ p{
   margin-left: 15%;
   margin-top: 15%;
   margin-bottom: 0%;
+  animation: 1.5s fadeInUp;
 }
 
 
 
 
 
-/*education container*/
+
 
 .education .card {
   border-radius: 15px;
@@ -118,5 +120,128 @@ p{
 .education .card:nth-child(2) {
   margin-left: 50%;
 }
+
+
+
+.experiences .card {
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: #fafafa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.experiences .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  background-color: #212529;
+}
+
+.experiences .card:hover .card-subtitle {
+  color: #f8f9fa !important;
+}
+
+.experiences .card:hover .card-text {
+  color: #f8f9fa !important;
+}
+
+.experiences .card-title {
+  font-family: 'Roboto', sans-serif;
+  color: #3c8dbc;
+  font-weight: bold;
+}
+
+.experiences .card-subtitle {
+  color: #5a5a5a;
+  transition: color 0.3s ease;
+}
+
+.experiences .card-text {
+  font-size: 16px;
+  font-family: 'Verdana', sans-serif;
+  line-height: 1.5;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.experiences .card-body {
+  padding: 25px;
+}
+
+.experiences .card:first-child {
+  margin-top: 10px;
+}
+
+.experiences .card:nth-child(2) {
+  margin-left: 50%;
+}
+
+
+@keyframes fadeInUp {
+0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.info {
+  animation: 1.5s fadeInUp;
+}
+
+
+
+
+
+
+
+
+.contact-container {
+  align-self: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 40%;
+}
+
+.contact-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: 'roboto';
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-item svg {
+  margin-right: 10px;
+}
+
+.contact-link {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #004d99;
+}
+
+
 
 

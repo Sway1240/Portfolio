@@ -13,3 +13,13 @@ function switchrole() {
 
 setInterval(switchrole, 1000);
 switchrole();
+
+
+function loading() {
+  const loadingElements = document.getElementsByClassName("loading");
+  while (loadingElements.length > 0) {
+    loadingElements[0].remove();
+  }
+}
+
+setInterval(loading, 2000);
