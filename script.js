@@ -22,4 +22,4 @@ function loading() {
   }
 }
 
-setInterval(loading, 2000);
+setInterval(loading, 3000);
