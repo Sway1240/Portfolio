@@ -22,6 +22,12 @@ header{
   z-index: 5;
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 99%;
+}
+
 
 .card {
     max-width: 81%;
