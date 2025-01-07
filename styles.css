@@ -251,3 +251,70 @@ p{
 
 
 
+
+
+
+/* 🌍 Apply these fixes ONLY for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+
+  /* 📌 Navbar Adjustments */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  /* 📏 Prevent Elements from Stretching */
+  .card, .container, .contact-container {
+    width: 90% !important;  /* Keep content centered & avoid stretching */
+    max-width: 400px; /* Set a reasonable max-width */
+    margin: 20px auto; /* Center elements */
+  }
+
+  /* 🎨 Improve Text Readability */
+  #Title {
+    font-size: 2rem;  /* Reduce title size for smaller screens */
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 0;
+  }
+
+  .info {
+    width: 90%;
+    margin: 5% auto;
+    text-align: center;
+  }
+
+  /* 🏫 Fix Education & Experience Sections */
+  .education .card, .experiences .card {
+    width: 90%;
+    margin: 10px auto !important;
+    display: block;
+  }
+
+  .education .card:nth-child(2), 
+  .experiences .card:nth-child(2) {
+    margin-left: 0 !important;
+  }
+
+  /* 📱 Responsive Container */
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* 📧 Contact Section Fixes */
+  .contact-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .contact-container h1 {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+
